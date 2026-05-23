@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "FinTrack",
+    "slug": "fintrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D1117"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fintrack.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "FinTrack needs microphone access to record voice transactions.",
+        "NSSpeechRecognitionUsageDescription": "FinTrack uses speech recognition to transcribe your voice input."
+      }
+    },
+    "android": {
+      "package": "com.fintrack.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D1117"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "FinTrack needs microphone access to record voice transactions."
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "scheme": "fintrack"
+  }
+}
