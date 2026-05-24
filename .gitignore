@@ -42,5 +42,5 @@ yarn-error.*
 .claude/
 CLAUDE.md
 AGENTS.md
-make_commits.ps1
 
+documentation.md
